@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This survey form will not be sent to any server because it's only a layout</p>
+        <form action="" id="survey-form">
+            <div class="input-container">
+                <input type="text" id="name" placeholder="name" required>
+                <label for="name" id="name-label">Name</label>
+            </div>
+
+            <div class="input-container">
+                <input type="number" min="0" max="99999999" id="number" placeholder="number" required>
+                <label for="number" id="number-label">Age</label>
+            </div>
+
+            <div class="input-container">
+                <input type="email" name="" id="email" placeholder="email" required>
+                <label for="email" id="email-label">Email</label>
+            </div>
+
+            <div class="question-container">
+                <p class="question">What would you like to learn ?</p>
+                
+                <div>
+                    <input type="checkbox" id="frontend" name="technology" checked>
+                    <label for="frontend">Frontend</label>
+                  </div>
+                  
+                <div>
+                    <input type="checkbox" id="backend" name="technology">
+                    <label for="backend">Backend</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="mobile" name="technology">
+                    <label for="mobile">Mobile</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <p class="question">what level do you like challenges ?</p>
+                
+                <div>
+                    <input type="radio" id="basic" name="level" value="basic" checked>
+                    <label for="basic">Basic</label>
+                </div>
+                  
+                <div>
+                    <input type="radio" id="intermediate" name="level" value="intermediate">
+                    <label for="intermediate">Intermediate</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="advance" name="level" value="advance">
+                    <label for="advance">Advance</label>
+                </div>
+            </div>
+
+            <div class="question-container center">
+                <p class="question">Are you studying or working?</p>
+
+                <select id="cars" name="cars">
+                    <option value="studying">Studying</option>
+                    <option value="working">Working</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <textarea required></textarea>
+                <label>Any suggest or feedback ?</label>
+            </div>
+        
+            <div class="input-container center">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
